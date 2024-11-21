@@ -8,7 +8,7 @@ public class Cart <T extends Food> {
     private final UMarket market;
     private final Class<T> clazz;
 
-    public Cart(UMarket market, Class<T> clazz) {
+    public Cart(Class<T> clazz, UMarket market) {
         foodstuffs = new ArrayList<>();
         this.market = market;
         this.clazz = clazz;

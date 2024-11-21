@@ -16,6 +16,6 @@ public class Crisps implements Snack{
 
     @Override
     public String getName() {
-        return "";
+        return "Crisps";
     }
 }

@@ -16,6 +16,6 @@ public class DumplingsBerries implements SemiFinishedFood{
 
     @Override
     public String getName() {
-        return "Froze Berries";
+        return "Frozen Berries";
     }
 }

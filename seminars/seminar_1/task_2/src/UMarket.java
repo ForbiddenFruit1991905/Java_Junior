@@ -82,21 +82,21 @@ public class UMarket {
                 .filter(clazz::isInstance)
                 .forEach(thing -> {
 
-                    System.out.printf(
-                            Food.class.isAssignableFrom(thing.getClass()) ?
-                                    "[%d] %s (Белки: %s Жиры: %s Углеводы: %s)\n" :
-                                    "[%d] %s\n", counter[0]++, thing.getName(),
-                            ((Food)thing).getProteins() ? "Да" : "Нет",
-                            ((Food)thing).getFats() ? "Да" : "Нет",
-                            ((Food)thing).getCarbohydrates() ? "Да" : "Нет"
-                    );
+//                    System.out.printf(
+//                            Food.class.isAssignableFrom(thing.getClass()) ?
+//                                    "[%d] %s (Белки: %s Жиры: %s Углеводы: %s)\n" :
+//                                    "[%d] %s\n", counter[0]++, thing.getName(),
+//                            ((Food)thing).getProteins() ? "Да" : "Нет",
+//                            ((Food)thing).getFats() ? "Да" : "Нет",
+//                            ((Food)thing).getCarbohydrates() ? "Да" : "Нет"
+//                    );
 
-//                    if (Food.class.isAssignableFrom(thing.getClass())) {
-//                        System.out.printf("[%d] %s (Белки: %s Жиры: %s Углеводы: %s)\n", counter[0]++, thing.getName(), ((Food)thing).getProteins(),
-//                            ((Food)thing).getFats() ? "Да" : "Нет", ((Food)thing).getCarbohydrates() ? "Да" : "Нет");
-//                    } else {
-//                        System.out.printf("[%d] %s\n", counter[0]++, thing.getName());
-//                    }
+                    if (Food.class.isAssignableFrom(thing.getClass())) {
+                        System.out.printf("[%d] %s (Белки: %s Жиры: %s Углеводы: %s)\n", counter[0]++, thing.getName(), ((Food)thing).getProteins(),
+                            ((Food)thing).getFats() ? "Да" : "Нет", ((Food)thing).getCarbohydrates() ? "Да" : "Нет");
+                    } else {
+                        System.out.printf("[%d] %s\n", counter[0]++, thing.getName());
+                    }
                 });
     }
 }

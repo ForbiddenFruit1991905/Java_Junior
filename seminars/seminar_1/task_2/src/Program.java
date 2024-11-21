@@ -28,7 +28,7 @@ public class Program {
                     }
                     case 1 -> {
                         System.out.println("Список товаров:");
-                        market.printThings(HealthyFood.class);
+                        market.printThings(Thing.class);
                     }
                     case 2 -> CreateCart(Snack.class, market);
                     case 3 -> CreateCart(SemiFinishedFood.class, market);
@@ -43,7 +43,39 @@ public class Program {
         }
     }
 
-    public void createCard() {
+    static <T extends Food> void CreateCart(Class<T> clazz, UMarket market) {
+        Cart<T> cart = new Cart<>(clazz, market);
+        while(true) {
+            System.out.println("Список доступных товаров:");
+            System.out.println("[0] Завершение формирование корзины + балансировка");
+            market.printThings(clazz);
+            System.out.println("Укажите номер товара для добавления: ");
+            if(scanner.hasNext()) {
+                int no = scanner.nextInt();
+                scanner.nextLine();
+                if (no == 0) {
+                    cart.cardBalancing();
+                    System.out.println("Ваша корзина содержит продукты:");
+                    cart.printFoodstuffs();
+                    return;
+                } else {
+                    T thing = market.getThingByIndex(clazz, no);
+                    if (thing == null) {
+                        System.out.println("Некорректный номер товара.\nПожалуйста, повторите попытку ввода.");
+                        continue;
+                    }
+                    cart.getFoodstuffs().add(thing);
+                    System.out.println("Товар успешно добавлен в корзину.");
+                    System.out.println("Ваша корзина содержит продукты:");
+                    cart.printFoodstuffs();
+                }
+            }
+            else {
+                System.out.println("Некорректный пункт меню.\nПожалуйста, повторите попытку ввода.");
+                scanner.nextLine();
+            }
+        }
 
     }
+
 }
