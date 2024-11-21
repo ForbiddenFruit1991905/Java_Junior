@@ -1,4 +1,4 @@
-public class Fruits implements HealthyFood{
+public class Fruit implements HealthyFood{
     @Override
     public boolean getProteins() {
         return false;
