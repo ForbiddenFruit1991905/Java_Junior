@@ -1,3 +1,4 @@
+package task1;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -7,15 +8,15 @@ import java.lang.reflect.Method;
 public class Program {
     /*
      * Задача 1: Основы Reflection API
-     * Получите ин-ию о классе Person с исп-ем Reflection API:
+     * Получите ин-ию о классе task1.Person с исп-ем Reflection API:
      * выведите на экран все поля и методы класса.
-     * Создайте экземпляр класса Person c исп-ем Reflection API,
+     * Создайте экземпляр класса task1.Person c исп-ем Reflection API,
      * установите значение полей и вызовите методы.
      * Реализуйте обработку исключений для обеспечения корректного
      * взаимодействия с Reflection API.
      */
     public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
-        Class<?> person = Class.forName("Person");
+        Class<?> person = Class.forName("task1.Person");
         Constructor<?>[] constructors = person.getConstructors();
         Object personInstance = constructors[0].newInstance("Vika", 33);
         System.out.println(personInstance);
