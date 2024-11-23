@@ -19,8 +19,8 @@ public class Program {
 
         System.out.println("======================Var.2======================");
         System.out.println("Методы класса StringClass:");
-        Arrays.stream(StringClass.class.getMethods())
-                .map(method -> method.getName())
-                .forEach(methodName -> System.out.println(methodName + "\n"));
+        Arrays.stream(StringClass.class.getDeclaredMethods())
+//                .map(method -> method.getName())
+                .forEach(methodName -> System.out.println(methodName.getName() + "\n"));
     }
 }
