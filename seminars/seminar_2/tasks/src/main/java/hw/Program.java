@@ -20,6 +20,7 @@ public class Program {
         System.out.println("======================Var.2======================");
         System.out.println("Методы класса StringClass:");
         Arrays.stream(StringClass.class.getDeclaredMethods())
+//                .filter(method -> method.getReturnType().equals(String.class))  // *getReturnType().equals(String.class) - выводит методы, которые возвращют стринговое значение
 //                .map(method -> method.getName())
                 .forEach(methodName -> System.out.println(methodName.getName() + "\n"));
     }
