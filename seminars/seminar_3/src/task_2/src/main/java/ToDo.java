@@ -8,9 +8,9 @@ public class ToDo implements Externalizable {
     private String title;
     private boolean isDone;
 
-    public ToDo(String title, boolean isDone) {
+    public ToDo(String title) {
         this.title = title;
-        this.isDone = isDone;
+        isDone = false;
     }
 
     public String getTitle() {
@@ -23,11 +23,18 @@ public class ToDo implements Externalizable {
 
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
-        
+        out.writeObject(title);
+        out.writeBoolean(isDone);
     }
 
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
+        title = (String) in.readObject();
+        isDone = in.readBoolean();
+    }
 
+
+    public void setDone(boolean done) {
+        isDone = done;
     }
 }
