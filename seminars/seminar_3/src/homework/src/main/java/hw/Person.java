@@ -8,7 +8,7 @@ import org.json.simple.parser.ParseException;
 import java.io.*;
 import javax.persistence.*;
 
-public class Person {
+public class Person implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

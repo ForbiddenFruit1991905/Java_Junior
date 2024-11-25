@@ -31,15 +31,15 @@ public class Main {
             e.printStackTrace();
         }
 
-        // Сериализация объекта в JSON файл
-        person.serializePersonToJson("person.json");
-        System.out.println("Объект Person успешно сериализован в JSON");
-
-        // Десериализация объекта из JSON файла
-        Person newPerson = Person.deserializePersonFromJson("person.json");
-        System.out.println("Десериализованный объект Person:");
-        System.out.println("Имя: " + newPerson.getName());
-        System.out.println("Возраст: " + newPerson.getAge());
+//        // Сериализация объекта в JSON файл
+//        person.serializePersonToJson("person.json");
+//        System.out.println("Объект Person успешно сериализован в JSON");
+//
+//        // Десериализация объекта из JSON файла
+//        Person newPerson = Person.deserializePersonFromJson("person.json");
+//        System.out.println("Десериализованный объект Person:");
+//        System.out.println("Имя: " + newPerson.getName());
+//        System.out.println("Возраст: " + newPerson.getAge());
 
         // Добавление объекта Person в базу данных
         Person.addPerson(person);
