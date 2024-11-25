@@ -10,7 +10,7 @@ import java.io.IOException;
 обновления и удаления объектов Person.
  */
 public class Main {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) {
 
         Person person = new Person();
         person.setName("Vika");
@@ -31,15 +31,15 @@ public class Main {
             e.printStackTrace();
         }
 
-//        // Сериализация объекта в JSON файл
-//        person.serializePersonToJson("person.json");
-//        System.out.println("Объект Person успешно сериализован в JSON");
-//
-//        // Десериализация объекта из JSON файла
-//        Person newPerson = Person.deserializePersonFromJson("person.json");
-//        System.out.println("Десериализованный объект Person:");
-//        System.out.println("Имя: " + newPerson.getName());
-//        System.out.println("Возраст: " + newPerson.getAge());
+        // Сериализация объекта в JSON файл
+        person.serializePersonToJson("person.json");
+        System.out.println("Объект Person успешно сериализован в JSON");
+
+        // Десериализация объекта из JSON файла
+        Person newPerson = Person.deserializePersonFromJson("person.json");
+        System.out.println("Десериализованный объект Person:");
+        System.out.println("Имя: " + newPerson.getName());
+        System.out.println("Возраст: " + newPerson.getAge());
 
         // Добавление объекта Person в базу данных
         Person.addPerson(person);
