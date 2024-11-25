@@ -1,5 +1,11 @@
 package hw;
 
+import org.json.JSONObject;
+import org.json.simple.JSONValue;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+
 import java.io.*;
 import javax.persistence.*;
 
@@ -56,6 +62,35 @@ public class Person {
         try (ObjectInputStream in = new ObjectInputStream(new FileInputStream(filename))) {
             return (Person) in.readObject();
         }
+    }
+
+    // Методы сериализации и десириализации в формате JSON
+    public void serializePersonToJson(String filename) {
+        JSONObject jsonPerson = new JSONObject();
+        jsonPerson.put("name", this.name);
+        jsonPerson.put("age", this.age);
+
+        try (FileWriter file = new FileWriter(filename)) {
+            file.write(jsonPerson.toString());
+            file.flush();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static Person deserializePersonFromJson(String filename) {
+        Person person = new Person();
+        JSONParser parser = new JSONParser();
+
+        try (FileReader reader = new FileReader(filename)) {
+            Object obj = parser.parse(reader);
+            org.json.simple.JSONObject jsonPerson = (org.json.simple.JSONObject) obj;
+            person.setName((String) jsonPerson.get("name"));
+            person.setAge(((Long) jsonPerson.get("age")).intValue());
+        } catch (IOException | ParseException e) {
+            e.printStackTrace();
+        }
+        return person;
     }
 
     // Метод создания нового объекта Person в базе данных
