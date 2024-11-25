@@ -17,12 +17,19 @@ public class Main {
         person.setAge(33);
 
         // Сериализация объекта в файл
-//        try {
-//            person.serializePerson("person.ser");
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            person.serializePerson("person.ser");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
+        // Десериализация объекта из файла
+        try {
+            Person deserializedPerson = Person.deserializePerson("person.ser");
+            System.out.println("Десериализованный объект: " + deserializedPerson.getName() + ", " + deserializedPerson.getAge());
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
 
         // Сериализация объекта в JSON файл
         person.serializePersonToJson("person.json");
@@ -34,14 +41,6 @@ public class Main {
         System.out.println("Имя: " + newPerson.getName());
         System.out.println("Возраст: " + newPerson.getAge());
 
-        // Десериализация объекта из файла
-//        try {
-//            Person deserializedPerson = Person.deserializePerson("person.ser");
-//            System.out.println("Десериализованный объект: " + deserializedPerson.getName() + ", " + deserializedPerson.getAge());
-//        } catch (IOException | ClassNotFoundException e) {
-//            e.printStackTrace();
-//        }
-
         // Добавление объекта Person в базу данных
         Person.addPerson(person);
 
@@ -50,7 +49,7 @@ public class Main {
          Person.updatePerson(person);
 
         // Удаление объекта Person из базы данных (если нужно)
-//         Long personId = person.getId();
-//         Person.deletePerson(personId);
+         Long personId = person.getId();
+         Person.deletePerson(personId);
     }
 }
