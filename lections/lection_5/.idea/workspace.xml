@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38b9d458-0c10-4393-9515-736c17dfbcd6" name="Changes" comment="add example from Lection_5">
-      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_3/src/homework/src/main/resources/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_4/src/main/java/models/ExampleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_4/src/main/java/models/ExampleStudentRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_4/src/main/java/models/ExampleStudentsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_4/src/main/java/models/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_4/src/main/java/task_1/Program.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_4/src/main/java/task_2/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Db.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Connector.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Db.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Magic.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/Program.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" />
+    <list default="true" id="11c00493-d247-4e68-a570-523888f568a6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/ClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClientExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ClientExample2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ServerExample1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,67 +32,40 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2pNgA6Li7K26S2dERrrzMDBYHyi" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2pWaBUJvV3WP1lisVBdCU1v2nR2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Program.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.lection_5 [install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.lection_5 [package].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/GB/2_РАЗРАБОТЧИК/ПРОГРАММИСТ/II четверть/3. Java Junior/Java_Junior/lections/lection_5/src/main/java/project&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ClientExample1.executor": "Run",
+    "Application.ClientExample2.executor": "Run",
+    "Application.ServerExample1.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/GB/2_РАЗРАБОТЧИК/ПРОГРАММИСТ/II четверть/3. Java Junior/Java_Junior/lections/lection_5/src/main/client-server"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GB\2_РАЗРАБОТЧИК\ПРОГРАММИСТ\II четверть\3. Java Junior\Java_Junior\lections\lection_5\src\main\java\project" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GB\2_РАЗРАБОТЧИК\ПРОГРАММИСТ\II четверть\3. Java Junior\Java_Junior\lections\lection_5\src\main\java" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="38b9d458-0c10-4393-9515-736c17dfbcd6" name="Changes" comment="" />
-      <created>1732611805215</created>
+      <changelist id="11c00493-d247-4e68-a570-523888f568a6" name="Changes" comment="" />
+      <created>1732884153075</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1732611805215</updated>
+      <updated>1732884153075</updated>
     </task>
-    <task id="LOCAL-00001" summary="add example from Lection_5">
-      <option name="closed" value="true" />
-      <created>1732627020667</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1732627020667</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="add example from Lection_5" />
-    <option name="LAST_COMMIT_MESSAGE" value="add example from Lection_5" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.RuntimeException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
