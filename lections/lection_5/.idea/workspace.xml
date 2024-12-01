@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11c00493-d247-4e68-a570-523888f568a6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/ClientManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client-server/src/main/java/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ClientExample1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ClientExample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ServerExample1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_5/chat-client/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_5/chat-client/src/main/java/org/example/chat/client/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_5/chat-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_5/chat-server/src/main/java/org/example/chat/server/ClientManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../seminars/seminar_5/chat-server/src/main/java/org/example/chat/server/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,26 +30,26 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2pWaBUJvV3WP1lisVBdCU1v2nR2" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.ClientExample1.executor": "Run",
-    "Application.ClientExample2.executor": "Run",
-    "Application.ServerExample1.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GB/2_РАЗРАБОТЧИК/ПРОГРАММИСТ/II четверть/3. Java Junior/Java_Junior/lections/lection_5/src/main/client-server"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ClientExample1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ClientExample2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ServerExample1.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/GB/2_РАЗРАБОТЧИК/ПРОГРАММИСТ/II четверть/3. Java Junior/Java_Junior/lections/lection_5/src/main/client-server&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GB\2_РАЗРАБОТЧИК\ПРОГРАММИСТ\II четверть\3. Java Junior\Java_Junior\lections\lection_5\src\main\java" />
