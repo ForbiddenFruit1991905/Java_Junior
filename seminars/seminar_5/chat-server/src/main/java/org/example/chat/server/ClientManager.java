@@ -12,12 +12,13 @@ public class ClientManager  implements Runnable {
     public static ArrayList<ClientManager> clients = new ArrayList<>();
 
     public ClientManager(Socket socket) {
+        this.socket = socket;
         try {
-            this.socket = socket;
             bufferedWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             name = bufferedReader.readLine();
             clients.add(this);
+            System.out.println(name + " подключился к чату.");
             broadcastMessage("Server: " + name + " подключился к чату.");
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -73,6 +74,7 @@ public class ClientManager  implements Runnable {
 
     private void removeClient() {
         clients.remove(this);
+        System.out.println(name + " покинул чат.");
         broadcastMessage("Server: " + name + " покинул чат.");
     }
 }
