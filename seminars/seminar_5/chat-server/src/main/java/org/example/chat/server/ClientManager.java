@@ -45,6 +45,13 @@ public class ClientManager  implements Runnable {
         while (socket.isConnected()) {
             try {
                 messageFromClient = bufferedReader.readLine();
+                /*
+                if (messageFromClient == null) {
+                 // для macOS
+                 closeEverything(socket, bufferedReader, bufferedWriter);
+                 break;
+                }
+                 */
                 broadcastMessage(messageFromClient);
             } catch (IOException e) {
                 closeEverything(socket,bufferedReader, bufferedWriter);
