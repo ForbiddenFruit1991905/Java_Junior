@@ -23,8 +23,8 @@ public class ClientGUI extends JFrame {
     private boolean loginConnection;
 
     JPanel topFields = new JPanel(new GridLayout(3, 2));
-    JTextField ip = new JTextField("000.0.0.0");
-    JTextField port = new JTextField("8080");
+    JTextField ip = new JTextField("localhost");
+    JTextField port = new JTextField("1400");
     JPasswordField password = new JPasswordField("54321");
     JButton btnLogin = new JButton("Login");
 
@@ -34,7 +34,7 @@ public class ClientGUI extends JFrame {
 
     JPanel bottomFields = new JPanel(new BorderLayout());
     JPanel msgField = new JPanel(new BorderLayout());
-    JTextField msg = new JTextField(/*"some message"*/);
+    JTextField msg = new JTextField();
     JButton btnSend = new JButton("Send");
 
     public void sendMessage() {
@@ -104,7 +104,6 @@ public class ClientGUI extends JFrame {
         ActionListener sendActionListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //TODO
                 sendMessage();
             }
         };
@@ -128,11 +127,7 @@ public class ClientGUI extends JFrame {
             socket = new Socket(host, port); // Подключаемся к серверу
             out = new PrintWriter(socket.getOutputStream(), true); // Поток для отправки данных серверу
             in = new BufferedReader(new InputStreamReader(socket.getInputStream())); // Поток для чтения данных от сервера
-
-            // Пример отправки сообщения серверу
-            out.println("Пример сообщения от клиента GUI");
-
-            // Пример чтения ответа от сервера
+            out.println("Cообщение от пользователя.");
             String serverMessage = in.readLine();
             System.out.println("Ответ от сервера: " + serverMessage);
 
@@ -141,10 +136,5 @@ public class ClientGUI extends JFrame {
             System.err.println("Ошибка клиентского GUI: " + e.getMessage());
         }
     }
-
-//    public static void main(String[] args) {
-//        ClientGUI client = new ClientGUI(new ServerWindow());
-//        client.connectToServer("localhost", 1400);
-//    }
 
 }

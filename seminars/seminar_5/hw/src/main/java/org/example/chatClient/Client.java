@@ -1,10 +1,12 @@
 package org.example.chatClient;
 
+import org.example.server.ServerWindow;
+
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class Client {
+public class Client extends ServerWindow {
     private final Socket socket;
     private final String name;
     private BufferedWriter bufferedWriter;
