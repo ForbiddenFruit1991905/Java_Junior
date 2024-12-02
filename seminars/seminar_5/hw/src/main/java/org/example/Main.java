@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.chatClient.Client;
+import org.example.chatServer.Server;
 import org.example.client.ClientGUI;
 import org.example.server.ServerWindow;
 
